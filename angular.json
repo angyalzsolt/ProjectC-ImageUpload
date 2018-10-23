@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "image": {
+    "Angular6FirebaseStorage": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/image",
+            "outputPath": "dist/Angular6FirebaseStorage",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "image:build"
+            "browserTarget": "Angular6FirebaseStorage:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "image:build:production"
+              "browserTarget": "Angular6FirebaseStorage:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "image:build"
+            "browserTarget": "Angular6FirebaseStorage:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "image-e2e": {
+    "Angular6FirebaseStorage-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,12 +103,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "image:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "image:serve:production"
-            }
+            "devServerTarget": "Angular6FirebaseStorage:serve"
           }
         },
         "lint": {
@@ -123,5 +118,5 @@
       }
     }
   },
-  "defaultProject": "image"
+  "defaultProject": "Angular6FirebaseStorage"
 }
